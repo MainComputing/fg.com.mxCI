@@ -16,9 +16,11 @@ class Empleado extends CI_Controller {
 
     function __construct() {
         parent::__construct();
-        $this->load->helper('url');
+          $this->load->helper('url');
         $this->load->library('medoo');
-        $this->load->model('login_model');
+        $this->load->model('empleado_model');
+        $this->load->library('session');
+        
     }
 
     /*
@@ -26,35 +28,31 @@ class Empleado extends CI_Controller {
      * muestra la tabla de los empleados asi como su busqueda.
      */
     public function index() {
-        $this->load->view('empleado/admin_empleado');
-    }
-
-    /*
-     * Función que valida el usuario y la password del usuario, ademas de 
-     * que sube como variable de sesion el nombre del usuario.
-     * 
-     * @return $ruta si existe el usuario y null si no existe.
-     * 
-     */
-    public function validar_login() {
-        
-        /* Variables para validar login */
-        $id_usuario = $_POST["idEmpleado"];
-        $pass_usuario = $_POST["password"];
-        
-        $ruta = "null";
-        
-        /*Mandamos llamar al modelo para realizar la consulta a base de datos*/
-        $result = $this->login_model->validar($id_usuario, $pass_usuario);
-        
-        /*validamos el resultado obtenido*/
-        if(!empty($result))
+         /* validamos si la sesion fue inciada anteriormente verificando si el nombre del usuario esta
+         * en sesion.
+         */
+       if($this->session->userdata('nombre_de_usuario') == FALSE)
         {
-            $ruta = "Ruta Siguiente";
+            redirect(base_url().'Index.php/');
         }
+        /*si existe, lo colocamos dentro de un array y lo mandamos a la vista*/
+        $data['nombre_usuario'] = $this->session->userdata('nombre_de_usuario');
         
-        /*Mandamos la ruta a la vista*/
-        echo $ruta;
+        
+        /*obtenemos los empleados para mostrarlos en la tabla*/
+        $empleados = $this->empleado_model->obtener_empleados();
+        
+        $data['empleados'] = $empleados;
+
+        /*cargamos las vistas correspondiente*/
+        $this->load->view('empleado/encabezado_empleado');
+        $this->load->view('comun/menu_superior',$data);
+        $this->load->view('comun/menu');
+        
+        /*Esta es la vista que cambia el cuerpo de la pagina*/
+        $this->load->view('empleado/admin_empleado',$data);        
+       $this->load->view('empleado/pie_pagina');
+        
     }
 
 }

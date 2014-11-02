@@ -31,7 +31,7 @@ function validaLogin(id,pass)
 {
     //window.location.href = "Index.php/login/validar_login";
     
-   $.ajax("Index.php/login/validar_login", {
+   $.ajax("login/validar_login", {
             type: "post",   // usualmente post o get
             success: function(result) {
               if(result != 'null')
