@@ -52,7 +52,7 @@ class Login extends CI_Controller {
         /* validamos el resultado obtenido */
         if (!empty($result)) {
             /* Mandamos la ruta de la pagina principal */
-            $ruta = "principal/";
+            $ruta = "/fg.com.mxCI/Index.php/principal/";
 
             /* Agregamos los datos de Sesión para mostrar en todas la páginas */
             $datos_sesion = array(

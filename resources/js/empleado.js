@@ -10,17 +10,112 @@
         /*Eliminamos el sorting de las accion*/
         $('#th_action').removeClass("sorting");
     });
-    $("#button_editar").click(function(){
-        //window.location.replace("/fg.com.mx/view/empleado/modificar_empleado.php");
-        alert("editar");
-	});
-    $("#button_agregar").click(function(){
-        window.location.replace("/fg.com.mx/view/empleado/insertar_empleado.php");
-	});
     $("#button_info").click(function(){
         window.open("/fg.com.mx/view/empleado/consultar_empleado.php","","width=500,height=600");
 	});
-    $("#button_despedir").click(function(){
-        //window.open();
-        window.open("/fg.com.mx/view/empleado/despedir_empleado.php","","width=400,height=305","_blank","toolbar=no, scrollbars=no, resizable=no, top=700, left=700, width=700, height=700");
-	});
+        
+    /*
+     * Funcion que se dispara cuando mandamos el clic de despedir. mostramos el
+     * modal y mandamos a consulta los checkbox que estan seleccionados. 
+     */
+    
+    $("#btn_despedir").click(function () {
+    //window.open();
+    // window.open("/fg.com.mx/view/empleado/despedir_empleado.php","","width=400,height=305","_blank","toolbar=no, scrollbars=no, resizable=no, top=700, left=700, width=700, height=700");
+
+    /* Recorremos los checkbox y los guardmos en una lista */
+    var listaEmpleados ="";
+    $("input:checkbox:checked").each(function ()
+    {
+        listaEmpleados = listaEmpleados+$(this).val()+ ",";
+        //alert($(this).val());
+    });
+    if(listaEmpleados != "")
+    {
+    /*autoclic para mostrar el modal*/
+    $("#modal").click();
+    
+    /*Mostramos mensaje de carga*/
+    $("#tituloModal").text("Cargando...");
+    $("#cuerpo_modal").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");
+    
+    
+    $.ajax("/fg.com.mxCI/Index.php/empleado/mostrar_despedir", {
+            type: "post",   // usualmente post o get
+            success: function(result) {
+              $("#tituloModal").text("Despedir Empleado");
+              $("#cuerpo_modal").html(result);
+            },
+            error: function(result) {
+                alert("Error en la conexión!");
+            },
+        data: {lstEmpleado:listaEmpleados},
+        async: true,
+    });
+    }
+    else
+    {
+        alert("Seleccione al menos un Empleado");
+    }
+});
+
+/*$("#link_siguiente").click(function (e) {
+    e.preventDefault();
+    alert('entre');
+    //$.get($(this).attr('href'), function(data){$(this).next().html(data)});
+  });*/
+
+
+  $("#btn_guardar").click(function () {
+      //alert('despedir');
+      var motivo = $("#txt_motivo").val();
+      if(motivo === "")
+      {
+          alert("Debes ingresar un motivo");
+      }
+      else
+      {
+          $.ajax("/fg.com.mxCI/Index.php/empleado/despedir_empleado", {
+            type: "post",   // usualmente post o get
+            success: function(result) {
+              $("#tituloModal").text("Despedir Empleado");
+              $("#cuerpo_modal").html(result);
+            },
+            error: function(result) {
+                alert("Error en la conexión!");
+            },
+        data: {numEmpleado:numeroEmpleado,lstEmpleado:listaEmpleados},
+        async: true
+        });
+      }
+  });
+
+
+
+function mostrarEmpleado(numeroEmpleado){
+    //alert(numEmpleado);
+    /*Mostramos mensaje de carga*/
+    $("#tituloModal").text("Cargando...");
+    $("#cuerpo_modal").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");
+    
+    /* Recorremos los checkbox y los guardmos en una lista */
+    var listaEmpleados ="";
+    $("input:checkbox:checked").each(function ()
+    {
+        listaEmpleados = listaEmpleados+$(this).val()+ ",";
+        //alert($(this).val());
+    });
+    
+    $.ajax("/fg.com.mxCI/Index.php/empleado/mostrar_empleado_despedir", {
+            type: "post",   // usualmente post o get
+            success: function(result) {
+              $("#tituloModal").text("Despedir Empleado");
+              $("#cuerpo_modal").html(result);
+            },
+            error: function(result) {
+                alert("Error en la conexión!");
+            },
+        data: {numEmpleado:numeroEmpleado,lstEmpleado:listaEmpleados},
+        async: true
+    });
+    }

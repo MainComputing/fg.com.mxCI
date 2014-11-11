@@ -31,13 +31,17 @@ function validaLogin(id,pass)
 {
     //window.location.href = "Index.php/login/validar_login";
     
-   $.ajax("login/validar_login", {
+   $.ajax("/fg.com.mxCI/Index.php/login/validar_login", {
             type: "post",   // usualmente post o get
             success: function(result) {
               if(result != 'null')
               {
                   //alert(result);
                   window.location.href = result;
+              }
+              else
+              {
+                  alert("Usuario/password no coincide");
               }
             },
             error: function(result) {
