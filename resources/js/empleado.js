@@ -59,15 +59,9 @@
     }
 });
 
-/*$("#link_siguiente").click(function (e) {
-    e.preventDefault();
-    alert('entre');
-    //$.get($(this).attr('href'), function(data){$(this).next().html(data)});
-  });*/
-
 
   $("#btn_guardar").click(function () {
-      //alert('despedir');
+      var numEmpleado= $("#num_empleado").text();
       var motivo = $("#txt_motivo").val();
       if(motivo === "")
       {
@@ -75,16 +69,19 @@
       }
       else
       {
+          /*Mostramos mensaje de carga*/
+          $("#tituloModal").text("Cargando...");
+          $("#cuerpo_modal").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");
+    
           $.ajax("/fg.com.mxCI/Index.php/empleado/despedir_empleado", {
             type: "post",   // usualmente post o get
             success: function(result) {
-              $("#tituloModal").text("Despedir Empleado");
-              $("#cuerpo_modal").html(result);
+                refrescar_pantalla_despedir();
             },
             error: function(result) {
                 alert("Error en la conexión!");
             },
-        data: {numEmpleado:numeroEmpleado,lstEmpleado:listaEmpleados},
+        data: {idEmpleado:numEmpleado,motivoEmpleado:motivo},
         async: true
         });
       }
@@ -119,3 +116,32 @@ function mostrarEmpleado(numeroEmpleado){
         async: true
     });
     }
+    
+    
+function refrescar_pantalla_despedir() {
+    /* Recorremos los checkbox y los guardmos en una lista */
+    var listaEmpleados ="";
+    $("input:checkbox:checked").each(function ()
+    {
+        listaEmpleados = listaEmpleados+$(this).val()+ ",";
+        //alert($(this).val());
+    });
+    
+    /*Mostramos mensaje de carga*/
+    $("#tituloModal").text("Cargando...");
+    $("#cuerpo_modal").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");
+    
+    
+    $.ajax("/fg.com.mxCI/Index.php/empleado/mostrar_despedir", {
+            type: "post",   // usualmente post o get
+            success: function(result) {
+              $("#tituloModal").text("Despedir Empleado");
+              $("#cuerpo_modal").html(result);
+            },
+            error: function(result) {
+                alert("Error en la conexión!");
+            },
+        data: {lstEmpleado:listaEmpleados},
+        async: true,
+    });        
+}

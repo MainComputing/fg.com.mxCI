@@ -140,6 +140,7 @@ class Empleado extends CI_Controller {
         /* modificamos los datos en la base de datos para el empleado */
         $result = $this->empleado_model->despedir_empleado($id_empleado, $motivo_empleado);
         
-        
+       // echo print_r($result);
+        echo $result;
     }
 }

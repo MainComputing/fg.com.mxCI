@@ -35,16 +35,16 @@ class Empleado_model extends CI_Model {
         if (count($resultado)>0) {
             $result = $resultado;
         }
-        //echo count($resultado);
+        
         return $result;
     }
     
     function obtener_datos_empleado($id_empleado)
     {
-         /* obtenemos los empleados */
-        /* aqui generamos in inner join para obtener el nombre del empleado y la sucursal a la que pernetenece */
-        $resultado = $this->base_datos->query("SELECT e.id,e.nombre,e.apellido_pat,e.apellido_mat,s.nombre_suc,p.nombre as nombre_puesto, h.tipo FROM empleado e JOIN sucursal s on e.sucursal_id = s.id join puesto p on e.puesto_id=p.id join horario h on e.horario_id= h.id where e.id =".$id_empleado.";")->fetchAll();
-       // $resultado = $this->base_datos->query("select * from usuario where idusuario=10;")->fetchAll();
+        /* obtenemos los empleados */
+        /* aqui generamos un inner join para obtener el nombre del empleado y la sucursal a la que pernetenece */
+        $resultado = $this->base_datos->query("SELECT e.id,e.nombre,e.apellido_pat,e.apellido_mat,s.nombre_suc,p.nombre as nombre_puesto, h.tipo,ee.estado,ee.motivo_despido FROM empleado e JOIN sucursal s on e.sucursal_id = s.id join puesto p on e.puesto_id=p.id join horario h on e.horario_id= h.id join estadoempleado ee on ee.id = e.estadoempleado_id where e.id =".$id_empleado.";")->fetchAll();
+        
         /* Validamos si la variable viene vacia */
         $result = null;
         if (count($resultado)>0) {
@@ -56,6 +56,11 @@ class Empleado_model extends CI_Model {
 
     function despedir_empleado($id_empleado, $motivo)
     {
-            //$resultado = $this->base_datos->query("update estadoempleado set estado=0,motivo_despido='".$motivo".'where id in(select estadoempleado_id from empleado where id=".$id);");
+        
+        $id_estado_empleado = $this->base_datos->select("empleado", "estadoempleado_id", ["id" => $id_empleado]);
+        $filas = $this->base_datos->update("estadoempleado", ["estado" => 0,"motivo_despido" => $motivo],["id" =>$id_estado_empleado[0]]);
+          //  $resultado = $this->base_datos->query("update estadoempleado set estado=0,motivo_despido='".$motivo."'where id in(select estadoempleado_id from empleado where id=".$id_empleado.");");
+            //return $id_estado_empleado[0];
+        return $filas;
     }
 }

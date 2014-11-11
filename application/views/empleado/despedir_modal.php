@@ -1,30 +1,3 @@
-<!--
-<h1>Hola esta es la vista </h1>
-
-
-                                        //print_r($empleados);
-                                        if ($empleados != null) {
-                                            foreach ($empleados as $empleado) {
-                                                echo "<tr class='odd gradeX'>"
-                                                . "<td><input type='checkbox' value=" . $empleado['id'] . "></td>"
-                                                . "<td>" . $empleado['nombre'] . "</td>"
-                                                . "<td>" . $empleado['apellido_pat'] . "</td>"
-                                                . "<td>" . $empleado['apellido_mat'] . "</td>"
-                                                . "<td><CENTER>" . $empleado['nombre_suc'] . "</CENTER></td>"
-                                                . "";
-                                            }
-                                        }
-                                     
-    echo print_r($datos_empleado);
--->     
-   <!-- <div id="wrapper">
-                <div id="page-wrapper">-->
-                   <!-- <div class="row" style="text-align: right">
-                        <div class="col-lg-12" >
-                            <button type="button" name="submit" id="b_submit"class="btn btn-info">Guardar</button>
-                            <button type="button" class="btn btn-danger">Cancelar</button>
-                        </div>
-                    </div>-->
                     <!--Datos Personales -->
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
@@ -76,7 +49,18 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            Actividades en la Empresa
+                                            Actividades en la Empresa:
+                                            <?php
+                                                $estado_empleado= $datos_empleado[0]['estado'];
+                                                if($estado_empleado == 1)
+                                                {
+                                                    echo "<font color='green'><b>Activo</b></font>";
+                                                }
+                                                else
+                                                {
+                                                    echo "<font color='red'><b>Inactivo</b></font>";
+                                                }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +97,7 @@
 
                                     <div class="form-group">
                                         <label>Motivo de despido</label>
-                                            <textarea class="form-control" rows="3" style="resize: none;" id="txt_motivo"></textarea>
+                                            <textarea class="form-control" rows="3" style="resize: none;" id="txt_motivo"><?=$datos_empleado[0]['motivo_despido']?></textarea>
                                     </div>
                                 </div>
                             </div>
