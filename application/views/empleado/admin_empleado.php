@@ -20,10 +20,10 @@
                             <button type="button" class="btn btn-outline btn-info" id='btn_info'>Info</button>
                             <button type="button" class="btn btn-outline btn-warning" id='btn_editar'>Editar</button>
                             <button type="button" class="btn btn-outline btn-danger" id="btn_despedir">Despedir</button>
-                            <button type="button" class="btn btn-outline btn-success" id="btn_agregar" >Asignar Curso</button>
+                            <button type="button" class="btn btn-outline btn-success" id="btn_agregar_curso" >Asignar Curso</button>
                         </div>
                         <div class="col-lg-2 col-md-2">
-                            <button type="button" class="btn btn-success">Agregar Empleado</button>
+                            <button type="button" class="btn btn-success" id="btn_agregar">Agregar Empleado</button>
                         </div>
                     </div>
                 </div>
@@ -38,6 +38,7 @@
                                     <th>Apellido Paterno</th>
                                     <th>Apellido Materno</th>
                                     <th>Sucursal</th>
+                                    <th>Estado Actual</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -45,12 +46,19 @@
                                 //print_r($empleados);
                                 if ($empleados != null) {
                                     foreach ($empleados as $empleado) {
+                                        $estado="<font color='green'><b>Activo</b></font>";
+                                        if($empleado['estado'] == 0)
+                                        {
+                                            $estado="<font color='red'><b>Inactivo</b></font>";
+                                        }
+                                        
                                         echo "<tr class='odd gradeX'>"
                                         . "<td><input type='checkbox' value=" . $empleado['id'] . "></td>"
                                         . "<td>" . $empleado['nombre'] . "</td>"
                                         . "<td>" . $empleado['apellido_pat'] . "</td>"
                                         . "<td>" . $empleado['apellido_mat'] . "</td>"
                                         . "<td><CENTER>" . $empleado['nombre_suc'] . "</CENTER></td>"
+                                        . "<td><CENTER>" . $estado . "</CENTER></td>"        
                                         . "";
                                     }
                                 }
@@ -70,7 +78,7 @@
                                     <textarea class="form-control" style="min-height:160px; max-height: 160px; max-width: 568px;" rows="3" placeholder="Escribe una breve explicaci&oacute;n del despido." ></textarea>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" id="btn_cerrar">Cerrar</button>
                                     <button type="button" class="btn btn-primary" id="btn_guardar">Guardar</button>
                                 </div>
                             </div>
