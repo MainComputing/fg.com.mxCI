@@ -49,7 +49,7 @@ class Sucursal_model extends CI_Model {
         return $resultado;
     }
 
-    function insertar_sucursal($id_sucursal, $nombre, $num_empleados, $calle, $num_int, $num_ext, $col, $municipio, $estado, $foto_url) {
+    function insertar_sucursal($id_sucursal, $nombre, $num_empleados, $calle, $num_int, $num_ext, $col, $cp, $municipio, $estado, $foto_url) {
         /* Primero obtenemos el id del estado */
         $dato = $this->base_datos->select("estado", "id", [
             "nombre" => $estado]);
@@ -67,6 +67,7 @@ class Sucursal_model extends CI_Model {
             "num_int" => $num_int,
             "num_ext" => $num_ext,
             "colonia" => $col,
+            "cp"=>$cp,
             "municipio_id" => $id_municipio,
             "estado_id" => $id_estado
         ]);

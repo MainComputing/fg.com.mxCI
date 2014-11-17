@@ -114,7 +114,7 @@ class Sucursal extends CI_Controller {
         $url_imagen = "./resources/img/sucursales/$file_name";
         
         /*------------------------------------------------------------------------------------------*/
-        
+        /*Insertar nueva sucursal*/
         $mensaje= $this->sucursal_model->insertar_sucursal(
         $_POST['num_sucursal'], 
         $_POST['nombre'], 
@@ -123,6 +123,7 @@ class Sucursal extends CI_Controller {
         $_POST['num_int'], 
         $_POST['num_ext'], 
         $_POST['col'], 
+        $_POST['cp'],
         $_POST['municipio'], 
         $_POST['estado'], 
         $url_imagen);
@@ -136,14 +137,14 @@ class Sucursal extends CI_Controller {
             }
         } else {
             echo $msg;
-        }
-     //echo $_POST['num_empleado']." ".$_POST['rfc']." ".$_POST['nombre']." ".$_POST['ap_pat']." ".$_POST['ap_mat']." ".$_POST['edad']." ".$_POST['calle']." ".$_POST['num_int']." ".$_POST['num_ext']." ".$_POST['col']." ".$_POST['municipio']." ".$_POST['estado']." ".$_POST['puesto']." ".$_POST['sucursal']." ".$_POST['horario']." ".$url_imagen;
-      
+        }  
+
+        header('Location:/fg.com.mxCI/Index.php/sucursal/');
      }
 
     function mostrar_eliminar()
     {
-        
+        /*validamos el archivo antes de subirlo, archivo correspondiente a la imagen de la sucursal*/
        if($this->session->userdata('nombre_de_usuario') == FALSE)
         {
             redirect(base_url().'Index.php/');
@@ -247,19 +248,17 @@ class Sucursal extends CI_Controller {
             redirect(base_url().'Index.php/');
         }
         
-        /* obtener los id's de los Empleados */
+        /* obtener los id's de las Sucursales */
         $lista_sucursales = $_POST["lstSucursal"];
         
-        /* separamos el string de los empleados separados por ',' */
+        /* separamos el string de las sucursales separados por ',' */
         $this->lista_id_sucursal_eliminar = explode(",", $lista_sucursales);
         
-        /* obtener los id's de los Empleados */
+        /* obtener los id's de las sucursales*/
         $numero_sucursal = $_POST["numSucursal"];
         
-        /* obtenemos los datos del primer empleado para mostrarlo en el modal */
+        /* obtenemos los datos de la primer sucursal para mostrarlo en el modal */
         $sucursal = $this->sucursal_model->obtener_datos_sucursal($this->lista_id_sucursal_eliminar[$numero_sucursal]);
-        
-        //echo print_r($empleado);
         
         $data['datos_sucursal'] = $sucursal;
         $data['maxSucursales'] = count($this->lista_id_sucursal_eliminar);
@@ -289,7 +288,7 @@ class Sucursal extends CI_Controller {
                 $resultado= $resultado."<tr class='odd gradeX'>"
                 . "<td><input type='radio' name='sucursal' value=" . $sucursal['id'] . ">". $sucursal['id']."</td>"
                 . "<td>" . $sucursal['nombre_suc'] . "</td>"
-                . "<td> " . $sucursal['calle']." #".$sucursal['num_ext']." ".$inte. ", Col. ".$sucursal['colonia']."</td>"
+                . "<td> " . $sucursal['calle']." #".$sucursal['num_ext']." ".$inte. ", Col. ".$sucursal['colonia'].", C.P: ".$sucursal['cp']."</td>"
                 . "<td>" . $sucursal['municipio'] . "</td>"
                 ."<td>" . $sucursal['estado'] . "</td>"
                 ."<td><center>" . $sucursal['num_emp'] . "</center></td>"
@@ -308,16 +307,15 @@ class Sucursal extends CI_Controller {
             redirect(base_url().'Index.php/');
         }
         
-        /* obtener los id's de los Empleados */
+        /* obtener los id's de las Sucursales*/
         $lista_sucursales = $_POST["lstSucursal"];
         
-        /* separamos el string de los empleados separados por ',' */
+        /* separamos el string de las sucursales separados por ',' */
         $this->lista_id_sucursal_eliminar = explode(",", $lista_sucursales);
         
-        /* obtenemos los datos del primer empleado para mostrarlo en el modal */
+        /* obtenemos los datos de la primer sucursal para mostrarlo en el modal */
         $sucursal = $this->sucursal_model->obtener_datos_sucursal($this->lista_id_sucursal_eliminar[0]);
         
-        //echo print_r($empleado);
         $data['arr_estado'] = $this->empleado_model->obtener_estados();
 
         $data['datos_sucursal'] = $sucursal;
@@ -327,11 +325,13 @@ class Sucursal extends CI_Controller {
     }
 
     function editar_sucursal() {
+        /*Validamos la sesión*/
         if($this->session->userdata('nombre_de_usuario') == FALSE)
         {
             redirect(base_url().'Index.php/');
         }
            
+        /*Actualizamos la información de la tabla sucursales*/
         $mensaje= $this->sucursal_model->actualizar_sucursal(
         $_POST['num_sucursal'], 
         $_POST['nombre'], 

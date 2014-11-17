@@ -5,13 +5,13 @@
  *             funcionalidad de la seccion de sucursales.
  *             
  */
+
+ /*Método para habilitar la edición de una sucursal seleccionada*/
  $("#btn_editar").click(function(){
     var listaSucursal ="";
     $("input:radio:checked").each(function ()
     {
-
         listaSucursal = listaSucursal+$(this).val()+ ",";
-        alert($(this).val());
     });
     if(listaSucursal != "")
     {
@@ -41,6 +41,7 @@
         }
  });
 
+/*Realizar la busqueda de las sucursales*/
  $("#buscar").keyup(function(){
       $.ajax("/fg.com.mxCI/Index.php/sucursal/actualizar_tabla", {
                 type: "post",   // usualmente post o get
@@ -55,13 +56,12 @@
         });
  });
 
+/*Permite mostrar la información de la sucursal seleccionada*/
  $("#btn_info").click(function(){
     var listaSucursal ="";
      $("input:radio:checked").each(function ()
     {
-
         listaSucursal = listaSucursal+$(this).val()+ ",";
-        alert($(this).val());
     });
     if(listaSucursal != "")
     {
@@ -92,14 +92,13 @@
 
  });
 
+ /*Permite mostrar la información de la sucursal a eliminar*/
  $("#btn_eliminar").click(function () {
     /* Recorremos los checkbox y los guardmos en una lista */
     var listaSucursal ="";
      $("input:radio:checked").each(function ()
     {
-
         listaSucursal = listaSucursal+$(this).val()+ ",";
-        alert($(this).val());
     });
     if(listaSucursal != "")
     {
@@ -129,7 +128,7 @@
         }
 });
 
-
+/*Función que activa la eliminación de la sucursal*/
   $("#btn_guardar").click(function () {
         var numSucursal= $("#num_sucursal").text();
           /*Mostramos mensaje de carga*/
@@ -151,6 +150,7 @@
       
   });
 
+/*Función que activa la actualización de la información de la sucursal*/
   $("#btn_actualizar").click(function(){
           var numSucursal= $("#num_sucursal").text();
           var nombre = $("#nombre").val();
@@ -161,9 +161,6 @@
           var col = $("#col").val();
           var cp =  $("#cp").val();
 
-          alert(numSucursal+nombre+numEmp+calle+ext+inte+col+cp);
-          /*Mostramos mensaje de carga*/
-                 
           $.ajax("/fg.com.mxCI/Index.php/sucursal/editar_sucursal", {
             type: "post",   // usualmente post o get
             success: function(result) {
@@ -179,7 +176,7 @@
               col:col, cp:cp
             },
             async: true
-        });
+        });             
   });
 
 
@@ -212,6 +209,7 @@ function mostrarSucursal(numeroSucursal){
     }
 
 
+/*Boton para cerrar las ventanas modales*/
 $("#btn_cerrar").click(function () {
    location.reload(); 
 });
@@ -245,12 +243,12 @@ function refrescar_pantalla_eliminar() {
     
 }
 
-
+/*Validación antes de crear una nueva sucursal*/
  $("#btn_submit").click(function()
                     {
   /*Expresiones regulares para validar los campos de la forma*/                      
   /*
-   * Expresion para nombre: /^[a-zA-Z]\s*[a-zA-Z]+/
+   * Expresion para nombre: /^[a-zA-Z]\s*[a-zA-Z]+/ 
    * 
    */
                        if($("#num_sucursal").val().length<1)
@@ -299,6 +297,10 @@ function refrescar_pantalla_eliminar() {
                                             {   alert("Ingresa la Colonia.");}
                                             else
                                             {
+                                              if(isNaN($("#cp").val())||$("#cp").val().length<1 ){
+                                                  alert("Codigo Postal no válido")
+                                              }
+                                              else{
                                                 if($("#estado").val()=="--")
                                                 {
                                                     alert("Selecciona un Estado")
@@ -316,7 +318,8 @@ function refrescar_pantalla_eliminar() {
                                                     
                                                 }
                                             }
-                                            }
+                                          }
+                                          }
                                         }
                                       }
                                     }
@@ -344,8 +347,6 @@ function readURL(input)
 }
 
 $('#estado').on('change', function() {
-  alert( this.value );
-  
   var estadoSelecccionado = this.value;
   $.ajax("/fg.com.mxCI/Index.php/empleado/mostrar_municipio", {
             type: "post",   // usualmente post o get
@@ -360,16 +361,18 @@ $('#estado').on('change', function() {
     });        
 });
 
-
+/*Carga la página que permite la creación de una nueva sucursal*/
 $("#btn_agregar").click(function () {
     window.location="/fg.com.mxCI/Index.php/sucursal/mostrar_sucursal_agregar";
 });
 
+/*Carga la página principal al cancelar una nueva sucursal*/
 $("#btn_cancelar").click(function () {
     window.location="/fg.com.mxCI/Index.php/sucursal/";
 });
 
 
+/*Muestra información de las sucursales*/
 function mostrarInformacion(numeroSucursal){
     /*Mostramos mensaje de carga*/
     $("#tituloModalInfo").text("Cargando...");

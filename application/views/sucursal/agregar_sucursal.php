@@ -11,7 +11,7 @@
                             <button type="button" class="btn btn-danger" id="btn_cancelar">Cancelar</button>
                         </div>
                     </div>
-                    <!--Datos Personales -->
+                    <!--Datos Sucursal-->
                     <div class="row">
 
                         <div class="col-lg-5 col-md-5">
@@ -77,6 +77,13 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <input class="form-control" name="col" id="col"placeholder="Colonia: (San Cosme)"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="cp" id="cp"placeholder="Codigo Postal:  (Ej. 20000)"/>
                                     </div>
                                 </div>
                             </div>
