@@ -154,7 +154,7 @@ class Empleado extends CI_Controller {
         {
             redirect(base_url().'Index.php/');
         }
-        
+            
         /*obtenemos los datos predefinidos para mostrar en la pantalla*/
         
         $data['arr_estado'] = $this->empleado_model->obtener_estados();
@@ -203,7 +203,6 @@ class Empleado extends CI_Controller {
             echo $msg;
         }
         /*------------------------------------------------------------------------------------------*/
-        
         $this->empleado_model->insertar_empleado(
         $_POST['num_empleado'], 
         $_POST['rfc'], 

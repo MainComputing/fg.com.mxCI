@@ -159,15 +159,7 @@ function refrescar_pantalla_despedir() {
    * Expresion para nombre: /^[a-zA-Z]\s*[a-zA-Z]+/
    * 
    */
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
                        if($("#num_empleado").val().length<1)
                         {   alert("Ingresa un el de Empleado");}
                         else

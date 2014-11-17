@@ -19,17 +19,13 @@
                             <a href="/fg.com.mxCI/Index.php/empleado/"><i class="fa fa-sitemap fa-fw"></i> Administrar Empleados</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Administrar Sucursales</a>
-                            <ul class="nav nav-second-level">
-                            </ul>
+                            <a href="/fg.com.mxCI/Index.php/sucursal/"><i class="fa fa-bar-chart-o fa-fw"></i> Administrar Sucursales</a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-table fa-fw"></i> Administrar Cursos</a>
-                            <ul class="nav nav-second-level">
-                            </ul>
+                            <a href="/fg.com.mxCI/Index.php/curso/"><i class="fa fa-table fa-fw"></i> Administrar Cursos</a>
                             <!-- /.nav-second-level -->
-                        </li>           
+                        </li>            
                         <li class="active">
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Generar Reporte</a>
                             <!-- /.nav-second-level -->
