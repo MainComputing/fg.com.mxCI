@@ -62,14 +62,13 @@ class Sucursal_model extends CI_Model {
 
         /* Insertamos la dirección */
         $id_dir = $this->base_datos->insert("direccion", [
-            "id"=>$id_sucursal,
             "calle" => $calle,
             "num_int" => $num_int,
             "num_ext" => $num_ext,
             "colonia" => $col,
             "cp"=>$cp,
             "municipio_id" => $id_municipio,
-            "estado_id" => $id_estado
+            "estado_id" => $id_estado,
         ]);
 
         /*Insertamos la información general de la sucursal*/
@@ -78,7 +77,7 @@ class Sucursal_model extends CI_Model {
             "nombre_suc" => $nombre,
             "num_emp" => $num_empleados,
             "foto"=>$foto_url,
-            "direccion_id" => $id_sucursal
+            "direccion_id" => $id_dir
         ]);
         
    }
@@ -107,7 +106,7 @@ class Sucursal_model extends CI_Model {
         return $filas;
     }
 
-    function actualizar_sucursal($id_sucursal, $nombre, $num_empleados, $calle, $num_int, $num_ext, $col,$cp)
+    function actualizar_sucursal($id_sucursal, $nombre, $num_empleados, $calle, $num_int, $num_ext, $col,$cp,$id_dir)
     {   
         /*Actualizamos primero la información de la dirección correspondiente*/
         $dom = $this->base_datos->update("direccion",[
@@ -116,7 +115,7 @@ class Sucursal_model extends CI_Model {
                 "num_ext"=>$num_ext,
                 "colonia"=>$col,
                 "cp"=>$cp
-            ], ["id"=>$id_sucursal]);
+            ], ["id"=>$id_dir]);
 
         /*actualizamos la información en la tabla sucursal*/
         $filas = $this->base_datos->update("sucursal",[

@@ -15,9 +15,9 @@
     });
     if(listaSucursal != "")
     {
-    /*autoclic para mostrar el modal*/
+      
+        /*autoclic para mostrar el modal*/
         $("#modal_editar").click();
-        
         /*Mostramos mensaje de carga*/
         $("#tituloModalEditar").text("Cargando...");
         $("#cuerpo_modal_editar").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");
@@ -138,7 +138,6 @@
           $.ajax("/fg.com.mxCI/Index.php/sucursal/eliminar_sucursal", {
             type: "post",   // usualmente post o get
             success: function(result) {
-//                refrescar_pantalla_eliminar();
                   location.reload(); 
             },
             error: function(result) {
@@ -160,23 +159,25 @@
           var inte= $("#int").val();
           var col = $("#col").val();
           var cp =  $("#cp").val();
+          var id_dir= $("#id_dir").text();
 
           $.ajax("/fg.com.mxCI/Index.php/sucursal/editar_sucursal", {
-            type: "post",   // usualmente post o get
-            success: function(result) {
-              location.reload(); 
-            },
-            error: function(result) {
-                alert("Error en la conexión!");
-            },
-            data: {
-              num_sucursal:numSucursal,
-              nombre:nombre, num_empleados:numEmp,
-              calle:calle,num_int:inte,num_ext:ext,
-              col:col, cp:cp
-            },
-            async: true
-        });             
+              type: "post",   // usualmente post o get
+              success: function(result) {
+                location.reload(); 
+              },
+              error: function(result) {
+                  alert("Error en la conexión!");
+              },
+              data: {
+                num_sucursal:numSucursal,
+                nombre:nombre, num_empleados:numEmp,
+                calle:calle,num_int:inte,num_ext:ext,
+                col:col, cp:cp,id_dir:id_dir
+              },
+              async: true
+          });             
+          
   });
 
 
@@ -223,7 +224,6 @@ function refrescar_pantalla_eliminar() {
     {
         listaSucursal = listaSucursal+$(this).val()+ ",";
     });
-    
     /*Mostramos mensaje de carga*/
     $("#tituloModal").text("Cargando...");
     $("#cuerpo_modal").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");

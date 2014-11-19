@@ -286,7 +286,7 @@ class Sucursal extends CI_Controller {
                 else
                     $inte='  Int : '.$sucursal['num_int'];
                 $resultado= $resultado."<tr class='odd gradeX'>"
-                . "<td><input type='radio' name='sucursal' value=" . $sucursal['id'] . ">". $sucursal['id']."</td>"
+                . "<td><input type='radio' name='sucursal' value=" . $sucursal['id'] . "></td>"
                 . "<td>" . $sucursal['nombre_suc'] . "</td>"
                 . "<td> " . $sucursal['calle']." #".$sucursal['num_ext']." ".$inte. ", Col. ".$sucursal['colonia'].", C.P: ".$sucursal['cp']."</td>"
                 . "<td>" . $sucursal['municipio'] . "</td>"
@@ -309,7 +309,6 @@ class Sucursal extends CI_Controller {
         
         /* obtener los id's de las Sucursales*/
         $lista_sucursales = $_POST["lstSucursal"];
-        
         /* separamos el string de las sucursales separados por ',' */
         $this->lista_id_sucursal_eliminar = explode(",", $lista_sucursales);
         
@@ -340,7 +339,8 @@ class Sucursal extends CI_Controller {
         $_POST['num_int'], 
         $_POST['num_ext'], 
         $_POST['col'], 
-        $_POST['cp']
+        $_POST['cp'],
+        $_POST['id_dir']
         );
 
         echo $mensaje;

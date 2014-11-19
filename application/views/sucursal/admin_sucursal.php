@@ -55,7 +55,7 @@
                                             $inte='  Int : '.$sucursal['num_int'];
 
                                         echo "<tr class='odd gradeX'>"
-                                        . "<td><input type='radio' name='sucursal' value=" . $sucursal['id'] . ">". $sucursal['id']."</td>"
+                                        . "<td><input type='radio' name='sucursal' value=" . $sucursal['id'] . "></td>"
                                         . "<td>" . $sucursal['nombre_suc'] . "</td>"
                                         . "<td> " . $sucursal['calle']." #".$sucursal['num_ext']." ".$inte. ", Col. ".$sucursal['colonia'].", C.P: ".$sucursal['cp']."</td>"
                                         . "<td>" . $sucursal['municipio'] . "</td>"
