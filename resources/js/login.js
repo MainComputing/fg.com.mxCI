@@ -52,5 +52,8 @@ function validaLogin(id,pass)
     });
 }
 
-
+function mostrarCorrecto()
+{
+    alert('Usuario Agregado Correctamente');
+}
 

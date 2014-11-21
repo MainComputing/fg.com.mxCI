@@ -229,6 +229,5 @@
 <button type="submit" id="subir_forma" style="display:none;"/>
             <?=form_close()?>
             <!-- /#wrapper -->
-
     </div>
     <!-- /#wrapper -->
