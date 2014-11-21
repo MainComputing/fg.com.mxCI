@@ -47,7 +47,7 @@ Separamos la parte del cuerpo de la pagina de los menus, entonces siempre se ini
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">Ir a Cursos</span>
+                                <span class="pull-left"><a href="/fg.com.mxCI/Index.php/curso/">Ir a Cursos</a></span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>

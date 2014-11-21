@@ -327,6 +327,29 @@ class Empleado extends CI_Controller {
         if ($this->session->userdata('nombre_de_usuario') == FALSE) {
             redirect(base_url() . 'Index.php/');
         }
+        /*------------------------------------------------------------------------------------------*/
+        $this->empleado_model->insertar_empleado(
+        $_POST['num_empleado'], 
+        $_POST['rfc'], 
+        $_POST['nombre'], 
+        $_POST['ap_pat'], 
+        $_POST['ap_mat'], 
+        $_POST['edad'], 
+        $_POST['calle'], 
+        $_POST['num_int'], 
+        $_POST['num_ext'], 
+        $_POST['col'], 
+        $_POST['municipio'], 
+        $_POST['estado'], 
+        $_POST['puesto'], 
+        $_POST['sucursal'], 
+        $_POST['horario'],
+        $url_imagen);
+     //echo $_POST['num_empleado']." ".$_POST['rfc']." ".$_POST['nombre']." ".$_POST['ap_pat']." ".$_POST['ap_mat']." ".$_POST['edad']." ".$_POST['calle']." ".$_POST['num_int']." ".$_POST['num_ext']." ".$_POST['col']." ".$_POST['municipio']." ".$_POST['estado']." ".$_POST['puesto']." ".$_POST['sucursal']." ".$_POST['horario']." ".$url_imagen;
+     }
+    
+    function mostrar_municipio ()
+    {
         /* obtener el id's del Empleado */
         $estado_seleccionado = $_POST["estado"];
 
