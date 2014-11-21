@@ -2944,3 +2944,649 @@ DEBUG - 2014-11-13 01:43:06 --> File loaded: application/views/empleado/agregar_
 DEBUG - 2014-11-13 01:43:06 --> File loaded: application/views/empleado/pie_pagina.php
 DEBUG - 2014-11-13 01:43:06 --> Final output sent to browser
 DEBUG - 2014-11-13 01:43:06 --> Total execution time: 0.0871
+DEBUG - 2014-11-13 02:01:01 --> Config Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:01:01 --> URI Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Router Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Output Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Security Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Input Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:01:01 --> Language Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:01:01 --> Model Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Model Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Session Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:01:01 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:01:01 --> Session routines successfully run
+DEBUG - 2014-11-13 02:01:01 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:01:01 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:01:01 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:01:01 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:01:01 --> File loaded: application/views/empleado/agregar_empleado.php
+DEBUG - 2014-11-13 02:01:01 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:01:01 --> Final output sent to browser
+DEBUG - 2014-11-13 02:01:01 --> Total execution time: 0.1568
+DEBUG - 2014-11-13 02:09:53 --> Config Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:09:53 --> URI Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Router Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> No URI present. Default controller set.
+DEBUG - 2014-11-13 02:09:53 --> Output Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Security Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Input Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:09:53 --> Language Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:09:53 --> Model Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Model Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Session Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:09:53 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:09:53 --> A session cookie was not found.
+DEBUG - 2014-11-13 02:09:53 --> Session routines successfully run
+DEBUG - 2014-11-13 02:09:53 --> File loaded: application/views/login.php
+DEBUG - 2014-11-13 02:09:53 --> Final output sent to browser
+DEBUG - 2014-11-13 02:09:53 --> Total execution time: 0.1004
+DEBUG - 2014-11-13 02:09:58 --> Config Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:09:58 --> URI Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Router Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Output Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Security Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Input Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:09:58 --> Language Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:09:58 --> Model Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Model Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Session Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:09:58 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:09:58 --> Session routines successfully run
+DEBUG - 2014-11-13 02:09:58 --> Final output sent to browser
+DEBUG - 2014-11-13 02:09:58 --> Total execution time: 0.0811
+DEBUG - 2014-11-13 02:09:59 --> Config Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:09:59 --> URI Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Router Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Output Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Security Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Input Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:09:59 --> Language Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:09:59 --> Model Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Model Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Session Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:09:59 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:09:59 --> Session routines successfully run
+DEBUG - 2014-11-13 02:09:59 --> File loaded: application/views/comun/encabezado.php
+DEBUG - 2014-11-13 02:09:59 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:09:59 --> File loaded: application/views/principal/inicio.php
+DEBUG - 2014-11-13 02:09:59 --> File loaded: application/views/comun/pie_pagina.php
+DEBUG - 2014-11-13 02:09:59 --> Final output sent to browser
+DEBUG - 2014-11-13 02:09:59 --> Total execution time: 0.0860
+DEBUG - 2014-11-13 02:10:03 --> Config Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:10:03 --> URI Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Router Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Output Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Security Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Input Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:10:03 --> Language Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:10:03 --> Model Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Model Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Session Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:10:03 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:10:03 --> Session routines successfully run
+DEBUG - 2014-11-13 02:10:03 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:10:03 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:10:03 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:10:03 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:10:03 --> File loaded: application/views/empleado/admin_empleado.php
+DEBUG - 2014-11-13 02:10:03 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:10:03 --> Final output sent to browser
+DEBUG - 2014-11-13 02:10:03 --> Total execution time: 0.0914
+DEBUG - 2014-11-13 02:10:06 --> Config Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:10:06 --> URI Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Router Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Output Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Security Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Input Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:10:06 --> Language Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:10:06 --> Model Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Model Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Session Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:10:06 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:10:06 --> Session routines successfully run
+DEBUG - 2014-11-13 02:10:06 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:10:06 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:10:06 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:10:06 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:10:06 --> File loaded: application/views/empleado/agregar_empleado.php
+DEBUG - 2014-11-13 02:10:06 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:10:06 --> Final output sent to browser
+DEBUG - 2014-11-13 02:10:06 --> Total execution time: 0.0934
+DEBUG - 2014-11-13 02:12:28 --> Config Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:12:28 --> URI Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Router Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Output Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Security Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Input Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:12:28 --> Language Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:12:28 --> Model Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Model Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Session Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:12:28 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:12:28 --> Session routines successfully run
+DEBUG - 2014-11-13 02:12:28 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:12:28 --> Final output sent to browser
+DEBUG - 2014-11-13 02:12:28 --> Total execution time: 0.0762
+DEBUG - 2014-11-13 02:12:59 --> Config Class Initialized
+DEBUG - 2014-11-13 02:12:59 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:12:59 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:12:59 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:13:00 --> URI Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Router Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Output Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Security Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Input Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:13:00 --> Language Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:13:00 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Session Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:13:00 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:13:00 --> Session routines successfully run
+DEBUG - 2014-11-13 02:13:00 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:13:00 --> Final output sent to browser
+DEBUG - 2014-11-13 02:13:00 --> Total execution time: 0.2486
+DEBUG - 2014-11-13 02:13:06 --> Config Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:13:06 --> URI Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Router Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Output Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Security Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Input Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:13:06 --> Language Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:13:06 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Session Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:13:06 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:13:06 --> Session routines successfully run
+DEBUG - 2014-11-13 02:13:06 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:13:06 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:13:06 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:13:06 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:13:06 --> File loaded: application/views/empleado/admin_empleado.php
+DEBUG - 2014-11-13 02:13:06 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:13:06 --> Final output sent to browser
+DEBUG - 2014-11-13 02:13:06 --> Total execution time: 0.0936
+DEBUG - 2014-11-13 02:13:13 --> Config Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:13:13 --> URI Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Router Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Output Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Security Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Input Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:13:13 --> Language Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:13:13 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Session Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:13:13 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:13:13 --> Session routines successfully run
+DEBUG - 2014-11-13 02:13:13 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:13:13 --> File loaded: application/views/empleado/despedir_modal.php
+DEBUG - 2014-11-13 02:13:13 --> Final output sent to browser
+DEBUG - 2014-11-13 02:13:13 --> Total execution time: 0.0980
+DEBUG - 2014-11-13 02:13:17 --> Config Class Initialized
+DEBUG - 2014-11-13 02:13:17 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:13:18 --> URI Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Router Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Output Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Security Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Input Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:13:18 --> Language Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:13:18 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Model Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Session Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:13:18 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:13:18 --> Session routines successfully run
+DEBUG - 2014-11-13 02:13:18 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:13:18 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:13:18 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:13:18 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:13:18 --> File loaded: application/views/empleado/admin_empleado.php
+DEBUG - 2014-11-13 02:13:18 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:13:18 --> Final output sent to browser
+DEBUG - 2014-11-13 02:13:18 --> Total execution time: 0.1008
+DEBUG - 2014-11-13 02:14:33 --> Config Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:14:33 --> URI Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Router Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Output Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Security Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Input Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:14:33 --> Language Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:14:33 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Session Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:14:33 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:14:33 --> Session routines successfully run
+DEBUG - 2014-11-13 02:14:33 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:14:33 --> File loaded: application/views/empleado/despedir_modal.php
+DEBUG - 2014-11-13 02:14:33 --> Final output sent to browser
+DEBUG - 2014-11-13 02:14:33 --> Total execution time: 0.1176
+DEBUG - 2014-11-13 02:14:39 --> Config Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:14:39 --> URI Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Router Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Output Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Security Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Input Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:14:39 --> Language Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:14:39 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Session Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:14:39 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Session routines successfully run
+DEBUG - 2014-11-13 02:14:39 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:14:39 --> Final output sent to browser
+DEBUG - 2014-11-13 02:14:39 --> Total execution time: 0.1403
+DEBUG - 2014-11-13 02:14:39 --> Config Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:14:39 --> URI Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Router Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Output Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Security Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Input Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:14:39 --> Language Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:14:39 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Session Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:14:39 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:14:39 --> Session routines successfully run
+DEBUG - 2014-11-13 02:14:39 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:14:39 --> File loaded: application/views/empleado/despedir_modal.php
+DEBUG - 2014-11-13 02:14:39 --> Final output sent to browser
+DEBUG - 2014-11-13 02:14:39 --> Total execution time: 0.0779
+DEBUG - 2014-11-13 02:14:41 --> Config Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:14:41 --> URI Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Router Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Output Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Security Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Input Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:14:41 --> Language Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:14:41 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Model Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Session Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:14:41 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:14:41 --> Session routines successfully run
+DEBUG - 2014-11-13 02:14:41 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:14:41 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:14:41 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:14:41 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:14:41 --> File loaded: application/views/empleado/admin_empleado.php
+DEBUG - 2014-11-13 02:14:41 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:14:41 --> Final output sent to browser
+DEBUG - 2014-11-13 02:14:41 --> Total execution time: 0.1057
+DEBUG - 2014-11-13 02:37:00 --> Config Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:37:00 --> URI Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Router Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Output Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Security Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Input Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:37:00 --> Language Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:37:00 --> Model Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Model Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Session Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:37:00 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:37:00 --> Session routines successfully run
+DEBUG - 2014-11-13 02:37:00 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:37:00 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:37:00 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:37:00 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:37:00 --> File loaded: application/views/empleado/admin_empleado.php
+DEBUG - 2014-11-13 02:37:00 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:37:00 --> Final output sent to browser
+DEBUG - 2014-11-13 02:37:00 --> Total execution time: 0.0995
+DEBUG - 2014-11-13 02:37:08 --> Config Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:37:08 --> URI Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Router Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Output Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Security Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Input Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:37:08 --> Language Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:37:08 --> Model Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Model Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Session Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:37:08 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:37:08 --> Session routines successfully run
+DEBUG - 2014-11-13 02:37:08 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:37:08 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:37:08 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:37:08 --> File loaded: application/views/comun/menu.php
+ERROR - 2014-11-13 02:37:08 --> Severity: Notice  --> Undefined variable: mensaje_correcto C:\wamp\www\fg.com.mxCI\application\views\empleado\agregar_empleado.php 236
+DEBUG - 2014-11-13 02:37:08 --> File loaded: application/views/empleado/agregar_empleado.php
+DEBUG - 2014-11-13 02:37:08 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:37:08 --> Final output sent to browser
+DEBUG - 2014-11-13 02:37:08 --> Total execution time: 0.1059
+DEBUG - 2014-11-13 02:37:44 --> Config Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:37:44 --> URI Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Router Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Output Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Security Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Input Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:37:44 --> Language Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:37:44 --> Model Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Model Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Session Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:37:44 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:37:44 --> Session routines successfully run
+DEBUG - 2014-11-13 02:37:44 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:37:44 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:37:44 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:37:44 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:37:44 --> File loaded: application/views/empleado/agregar_empleado.php
+DEBUG - 2014-11-13 02:37:44 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:37:44 --> Final output sent to browser
+DEBUG - 2014-11-13 02:37:44 --> Total execution time: 0.0947
+DEBUG - 2014-11-13 02:41:59 --> Config Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:41:59 --> URI Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Router Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Output Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Security Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Input Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:41:59 --> Language Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:41:59 --> Model Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Model Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Session Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:41:59 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:41:59 --> Session routines successfully run
+DEBUG - 2014-11-13 02:41:59 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:41:59 --> Final output sent to browser
+DEBUG - 2014-11-13 02:41:59 --> Total execution time: 0.0938
+DEBUG - 2014-11-13 02:42:44 --> Config Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:42:44 --> URI Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Router Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Output Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Security Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Input Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:42:44 --> Language Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:42:44 --> Model Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Model Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Session Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:42:44 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:42:44 --> Session routines successfully run
+DEBUG - 2014-11-13 02:42:44 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:46:25 --> Config Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:46:25 --> URI Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Router Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Output Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Security Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Input Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:46:25 --> Language Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:46:25 --> Model Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Model Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Session Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:46:25 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:46:25 --> Session routines successfully run
+DEBUG - 2014-11-13 02:46:25 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:46:25 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:46:25 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:46:25 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:46:25 --> File loaded: application/views/empleado/agregar_empleado.php
+DEBUG - 2014-11-13 02:46:25 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:46:25 --> Final output sent to browser
+DEBUG - 2014-11-13 02:46:25 --> Total execution time: 0.1150
+DEBUG - 2014-11-13 02:46:52 --> Config Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:46:52 --> URI Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Router Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Output Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Security Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Input Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:46:52 --> Language Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:46:52 --> Model Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Model Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Session Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:46:52 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:46:52 --> Session routines successfully run
+DEBUG - 2014-11-13 02:46:52 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:46:52 --> Final output sent to browser
+DEBUG - 2014-11-13 02:46:52 --> Total execution time: 0.0954
+DEBUG - 2014-11-13 02:47:23 --> Config Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:47:23 --> URI Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Router Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Output Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Security Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Input Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:47:23 --> Language Class Initialized
+DEBUG - 2014-11-13 02:47:23 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:47:24 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:47:24 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:47:24 --> Model Class Initialized
+DEBUG - 2014-11-13 02:47:24 --> Model Class Initialized
+DEBUG - 2014-11-13 02:47:24 --> Session Class Initialized
+DEBUG - 2014-11-13 02:47:24 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:47:24 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:47:24 --> Session routines successfully run
+DEBUG - 2014-11-13 02:47:24 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:47:24 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:47:24 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:47:24 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:47:24 --> File loaded: application/views/empleado/agregar_empleado.php
+DEBUG - 2014-11-13 02:47:24 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:47:24 --> Final output sent to browser
+DEBUG - 2014-11-13 02:47:24 --> Total execution time: 0.2060
+DEBUG - 2014-11-13 02:48:06 --> Config Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Hooks Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 02:48:06 --> URI Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Router Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Output Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Security Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Input Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 02:48:06 --> Language Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Loader Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Controller Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 02:48:06 --> Model Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Model Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Session Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 02:48:06 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 02:48:06 --> Session routines successfully run
+DEBUG - 2014-11-13 02:48:06 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 02:48:06 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 02:48:06 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 02:48:06 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 02:48:06 --> File loaded: application/views/empleado/admin_empleado.php
+DEBUG - 2014-11-13 02:48:06 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 02:48:06 --> Final output sent to browser
+DEBUG - 2014-11-13 02:48:06 --> Total execution time: 0.1005
+DEBUG - 2014-11-13 03:04:09 --> Config Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Hooks Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Utf8 Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> UTF-8 Support Enabled
+DEBUG - 2014-11-13 03:04:09 --> URI Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Router Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Output Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Security Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Input Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-13 03:04:09 --> Language Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Loader Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Controller Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Helper loaded: url_helper
+DEBUG - 2014-11-13 03:04:09 --> Model Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Model Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Session Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Helper loaded: string_helper
+DEBUG - 2014-11-13 03:04:09 --> Encrypt Class Initialized
+DEBUG - 2014-11-13 03:04:09 --> Session routines successfully run
+DEBUG - 2014-11-13 03:04:09 --> Helper loaded: form_helper
+DEBUG - 2014-11-13 03:04:09 --> File loaded: application/views/empleado/encabezado_empleado.php
+DEBUG - 2014-11-13 03:04:09 --> File loaded: application/views/comun/menu_superior.php
+DEBUG - 2014-11-13 03:04:09 --> File loaded: application/views/comun/menu.php
+DEBUG - 2014-11-13 03:04:09 --> File loaded: application/views/empleado/agregar_empleado.php
+DEBUG - 2014-11-13 03:04:09 --> File loaded: application/views/empleado/pie_pagina.php
+DEBUG - 2014-11-13 03:04:09 --> Final output sent to browser
+DEBUG - 2014-11-13 03:04:09 --> Total execution time: 0.1025

@@ -14,6 +14,7 @@ if (!defined('BASEPATH'))
 class Empleado extends CI_Controller {
 
     var $lista_id_empleado_despedir;
+    var $lista_id_empleado_info;
 
     function __construct() {
         parent::__construct();
@@ -410,4 +411,32 @@ class Empleado extends CI_Controller {
         $this->load->view('empleado/despedir_modal', $data);
     }
 
+    
+    
+    function mostrar_info_empleados() {
+        /* validamos si la sesion fue inciada anteriormente verificando si el nombre del usuario esta
+         * en sesion.
+         */
+        if ($this->session->userdata('nombre_de_usuario') == FALSE) {
+            redirect(base_url() . 'Index.php/');
+        }
+
+        /* obtener los id's de los Empleados */
+        $lista_empleados = $_POST["lstEmpleado"];
+
+        /* separamos el string de los empleados separados por ',' */
+        $this->lista_id_empleado_info = explode(",", $lista_empleados);
+
+        /* obtenemos los datos del primer empleado para mostrarlo en el modal */
+        $empleado = $this->empleado_model->obtener_editar_datos_empleado($this->lista_id_empleado_info[0]);
+
+        $data['datos_empleado'] = $empleado;
+        $data['maxEmpledos'] = count($this->lista_id_empleado_despedir);
+        $data['numEmpleado'] = 0;
+        $this->load->view('empleado/info_modal', $data);
+    }
+    
+    
+    
+    
 }

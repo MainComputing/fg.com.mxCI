@@ -13,6 +13,10 @@
         $('#dataTables-example').dataTable();
         
     });
+    
+    
+    
+    
     $("#btn_despedir").click(function () {
     
     /* Recorremos los checkbox y los guardmos en una lista */
@@ -37,6 +41,54 @@
             success: function(result) {
               $("#tituloModal").text("Despedir Empleado");
               $("#cuerpo_modal").html(result);
+            },
+            error: function(result) {
+                alert("Error en la conexión!");
+            },
+        data: {lstEmpleado:listaEmpleados},
+        async: true,
+    });
+    }
+    else
+    {
+        alert("Seleccione al menos un Empleado");
+    }
+});
+
+
+/*
+ * funcion que muestra los TODOS los datos de los empleados que fueron seleccionados.
+ * 
+ */
+
+$("#btn_info").click(function () {
+    
+    /* Recorremos los checkbox y los guardmos en una lista */
+    var listaEmpleados ="";
+    $("input:checkbox:checked").each(function ()
+    {
+        listaEmpleados = listaEmpleados+$(this).val()+ ",";
+        
+    });
+    
+    
+    /* checamos si la lista viene vacia */
+    if(listaEmpleados != "")
+    {
+    /* autoclic para mostrar el modal*/
+    $("#modal").click();
+    
+    /* Mostramos mensaje de carga*/
+    $("#tituloModal").text("Cargando...");
+    $("#cuerpo_modal").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");
+    
+   
+    $.ajax("/fg.com.mxCI/Index.php/empleado/mostrar_info_empleados", {
+            type: "post",  
+            success: function(result) {
+              $("#tituloModal").text("Despedir Empleado");
+              $("#cuerpo_modal").html(result);
+              
             },
             error: function(result) {
                 alert("Error en la conexión!");
