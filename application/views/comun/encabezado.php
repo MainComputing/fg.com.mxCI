@@ -44,6 +44,7 @@
             <div class="navbar-header" style="padding-top: 7px;padding-left: 5px;"><img src="<?php echo base_url(); ?>resources/img/cirlogo.png"/></div>
             <div class="navbar-header">
                 <a class="navbar-brand" href="/fg.com.mxCI/Index.php/principal/">Sistema Administrador <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de Empleados</a>
+
             </div>
             <!-- /.navbar-header -->
 

@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Sucursal</h1>
+            <div class="alert alert-info alert-dismissable" id="alerta" style="display:none;" >Seleccionar al menos una Sucursal.</div>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -118,7 +119,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_cerrar">Cerrar</button>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_actualizar">Actualizar</button>
+                                    <button type="button" class="btn btn-primary" id="btn_actualizar">Actualizar</button>
                                 </div>
                             </div>
                             <!-- /.modal-content -->

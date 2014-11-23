@@ -6,6 +6,9 @@
  *             
  */
 
+$("input:radio").click(function(){
+  $('#alerta').hide("slide");
+});
  /*Método para habilitar la edición de una sucursal seleccionada*/
  $("#btn_editar").click(function(){
     var listaSucursal ="";
@@ -37,7 +40,7 @@
         }
         else
         {
-            alert("Seleccione al menos una Sucursal");
+            $("#alerta").show("swing");
         }
  });
 
@@ -82,12 +85,12 @@
                     alert("Error en la conexión!");
                 },
             data: {lstSucursal:listaSucursal},
-            async: true,
+            async: true,  
         });
         }
         else
         {
-            alert("Seleccione al menos una Sucursal");
+           $("#alerta").show("swing");
         }
 
  });
@@ -114,6 +117,7 @@
                 success: function(result) {
                   $("#tituloModal").text("Eliminar Sucursal");
                   $("#cuerpo_modal").html(result);
+
                 },
                 error: function(result) {
                     alert("Error en la conexión!");
@@ -124,7 +128,7 @@
         }
         else
         {
-            alert("Seleccione al menos una Sucursal");
+            $("#alerta").show("swing");
         }
 });
 
@@ -146,6 +150,7 @@
         data: {idSucursal:numSucursal},
         async: true
         });
+
       
   });
 
@@ -160,24 +165,105 @@
           var col = $("#col").val();
           var cp =  $("#cp").val();
           var id_dir= $("#id_dir").text();
+          if($("#nombre").val().length<1)
+          {   
+            $("#nombre").addClass("alert alert-warning");
+            //$("#nombre").attr("placeholder","Ingresar el nombre de la sucursal");
+          }
+        else
+        { 
+            if(!$("#nombre").val().match(/^[a-zA-Z]\s*[a-zA-Z]+/))
+            {
+                $('#nombre').click();
+                $('#nombre').popover();
+            }                                
+            else
+            {
+                if($("#numEmp").val().length<1)
+                {   
+                  $("#numEmp").addClass("alert alert-warning");
+                  //$("#num_empleados").attr("placeholder","Ingresar número de empleados");
+                }
+              else
+               { 
+                   if(isNaN($("#numEmp").val()))
+                   {
+                        $('#numEmp').click();
+                        $('#numEmp').popover();
+                   }
+                   else
+                   {
+                        if($("#calle").val().length<1)
+                        { 
+                          $("#calle").addClass("alert alert-warning");
+                          //$("#calle").attr("placeholder","Ingresar nombre de la calle");
+                        }
+                        else
+                        { 
+                          if($("#ext").val().length<1)
+                          {   
+                              $("#ext").addClass("alert alert-warning");
+                              //$("#num_ext").attr("placeholder","Ingresar número exterior");
+                          }
+                          else
+                          {   
+                              if(isNaN($("#ext").val()))
+                              {
+                                $('#ext').click();
+                                $('#ext').popover();
+                              }
+                              else
+                              {
+                                  if($("#col").val().length<1)
+                                  {   
+                                    $("#col").addClass("alert alert-warning");
+                                    //$("#col").attr("placeholder","Ingresar número de sucursal");
+                                  }
+                                  else
+                                  {
+                                    if(isNaN($("#cp").val())){
+                                        $('#cp').click();
+                                        $('#cp').popover();
+                                    }
+                                    else{
+           
+                                        if($("#cp").val().length<1){
+                                           $("#cp").addClass("alert alert-warning");
+                                        }else{
 
-          $.ajax("/fg.com.mxCI/Index.php/sucursal/editar_sucursal", {
-              type: "post",   // usualmente post o get
-              success: function(result) {
-                location.reload(); 
-              },
-              error: function(result) {
-                  alert("Error en la conexión!");
-              },
-              data: {
-                num_sucursal:numSucursal,
-                nombre:nombre, num_empleados:numEmp,
-                calle:calle,num_int:inte,num_ext:ext,
-                col:col, cp:cp,id_dir:id_dir
-              },
-              async: true
-          });             
-          
+
+                                          $("#tituloModalEditar").text("Actualizando...");
+                                          $("#cuerpo_modal_editar").html("<center><img src='/fg.com.mxCI/resources/img/cargando.gif' alt='cargando' style='width:100px;height:100px'/></center>");
+                                          $("#btn_actualizar").hide();
+                                          $.ajax("/fg.com.mxCI/Index.php/sucursal/editar_sucursal", {
+                                                  type: "post",   // usualmente post o get
+                                                  success: function(result) {
+                                                    location.reload();                                                                                                    
+                                                  },
+                                                  error: function(result) {
+                                                      alert("Error en la conexión!");
+                                                  },
+                                                  data: {
+                                                    num_sucursal:numSucursal,
+                                                    nombre:nombre, num_empleados:numEmp,
+                                                    calle:calle,num_int:inte,num_ext:ext,
+                                                    col:col, cp:cp,id_dir:id_dir
+                                                  },
+                                                  async: true
+                                              });
+                                          
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+
   });
 
 
@@ -243,6 +329,7 @@ function refrescar_pantalla_eliminar() {
     
 }
 
+// VALIDACIONES 
 /*Validación antes de crear una nueva sucursal*/
  $("#btn_submit").click(function()
                     {
@@ -252,83 +339,119 @@ function refrescar_pantalla_eliminar() {
    * 
    */
                        if($("#num_sucursal").val().length<1)
-                        {   alert("Ingresa numero de Sucursal");}
+                        {  $("#num_sucursal").addClass("alert alert-warning");
+                           //$("#num_sucursal").attr("placeholder","Ingresar número de sucursal");
+                        }
                         else
                         {
+
                             if(isNaN($("#num_sucursal").val()))
                             {
-                                alert("El numero del empleado no es valido.");
+                                $('#num_sucursal').click();
+                                $('#num_sucursal').popover();
                             }                          
-                          else
-                          { if($("#nombre").val().length<1)
-                            {   alert("Ingresa el Nombre.");}
+                            else
+                            { 
+                              if($("#nombre").val().length<1)
+                              {   
+                                $("#nombre").addClass("alert alert-warning");
+                                //$("#nombre").attr("placeholder","Ingresar el nombre de la sucursal");
+                              }
                             else
                             { 
                                 if(!$("#nombre").val().match(/^[a-zA-Z]\s*[a-zA-Z]+/))
                                 {
-                                    alert("El nombre de la Sucursal es Invalido");
+                                    $('#nombre').click();
+                                    $('#nombre').popover();
                                 }                                
                                 else
                                 {
                                     if($("#num_empleados").val().length<1)
-                                  {   alert("Ingresa el numero de empleados.");}
+                                    {   
+                                      $("#num_empleados").addClass("alert alert-warning");
+                                      //$("#num_empleados").attr("placeholder","Ingresar número de empleados");
+                                    }
                                   else
                                    { 
                                        if(isNaN($("#num_empleados").val()))
                                        {
-                                           alert("Numero de empleados no es valido");
+                                            $('#num_empleados').click();
+                                            $('#num_empleados').popover();
                                        }
                                        else
                                        {
-                                       if($("#calle").val().length<1)
-                                     {   alert("Ingresa la Calle");}
-                                     else
-                                      { if($("#num_ext").val().length<1)
-                                        {   alert("Ingresa el Número Exterior.");}
-                                        else
-                                        {   
-                                           if(isNaN($("#num_ext").val()))
-                                           {
-                                               alert("El numero exterior no es valido.");
-                                           }
-                                           else
-                                           {
-                                            if($("#col").val().length<1)
-                                            {   alert("Ingresa la Colonia.");}
+                                            if($("#calle").val().length<1)
+                                            { 
+                                              $("#calle").addClass("alert alert-warning");
+                                              //$("#calle").attr("placeholder","Ingresar nombre de la calle");
+                                            }
                                             else
-                                            {
-                                              if(isNaN($("#cp").val())||$("#cp").val().length<1 ){
-                                                  alert("Codigo Postal no válido")
+                                            { 
+                                              if($("#num_ext").val().length<1)
+                                              {   
+                                                  $("#num_ext").addClass("alert alert-warning");
+                                                  //$("#num_ext").attr("placeholder","Ingresar número exterior");
                                               }
-                                              else{
-                                                if($("#estado").val()=="--")
-                                                {
-                                                    alert("Selecciona un Estado")
-                                                }
-                                                else
-                                                {
-                                                    if($("#imagen_sucursal").val()=="")
-                                                    {
-                                                        alert("selecciona una Imagen de Sucursal");
-                                                    }else{
-                                                       $("#forma_sucursal").attr("action", "/fg.com.mxCI/Index.php/sucursal/alta_sucursal");
-                                                       $("#subir_forma").click(); 
+                                              else
+                                              {   
+                                                  if(isNaN($("#num_ext").val()))
+                                                  {
+                                                    $('#num_ext').click();
+                                                    $('#num_ext').popover();
+                                                  }
+                                                  else
+                                                  {
+                                                      if($("#col").val().length<1)
+                                                      {   
+                                                        $("#col").addClass("alert alert-warning");
+                                                        //$("#col").attr("placeholder","Ingresar número de sucursal");
+                                                      }
+                                                      else
+                                                      {
+                                                        if(isNaN($("#cp").val())){
+                                                            $('#cp').click();
+                                                            $('#cp').popover();
+                                                        }
+                                                        else{
+                                                           if($("#cp").val().length<1 ){
+                                                              $('#cp').addClass("aler alert-warning");
+                                                           }
+                                                           else{
+                                                                if($("#estado").val()=="--")
+                                                                {
+                                                                    $('#estado').click();
+                                                                    $('#estado').popover();
+                                                                }
+                                                                else
+                                                                {
+                                                                    if($("#imagen_sucursal").val()=="")
+                                                                    {
+                                                                        $('#imagen_sucursal').click();
+                                                                        $('#imagen_sucursal').popover();
+                                                                    }else{
+                                                                       $("#forma_sucursal").attr("action", "/fg.com.mxCI/Index.php/sucursal/alta_sucursal");
+                                                                       $("#subir_forma").click(); 
 
+                                                                    }
+                                                        
+                                                                }
+                                                           }   
+                                                        } 
                                                     }
-                                                    
-                                                }
+                                                 }
+                                              }
                                             }
                                           }
-                                          }
-                                        }
-                                      }
+                                         }
+                                      }  
                                     }
-                                   }
-                               }
-                            }
-                          }   
-                        }   
-                });
+                                  }   
+                              }   
+                }); 
+
+$("input").focus(function(){
+    $(this).removeClass("alert alert-warning");
+});   
                                
 //-------------------------------------------------------------------------------------------------------------------
 function readURL(input) 

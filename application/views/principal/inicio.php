@@ -89,13 +89,23 @@ Separamos la parte del cuerpo de la pagina de los menus, entonces siempre se ini
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+
                             <div class="panel-footer">
-                                <span class="pull-left">Ir a Reportes</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
+                                <ul class="nav" id="side-menu">
+                                <li>
+                                    <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="blank.html">Blank Page</a>
+                                        </li>
+                                    <li>
+                                        <a href="login.html">Login Page</a>
+                                    </li>
+                                    </ul>
+                                </li>
+                            </ul>
                             </div>
-                        </a>
+                    
                     </div>
                 </div>
             </div>
