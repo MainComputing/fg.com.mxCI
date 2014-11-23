@@ -59,7 +59,7 @@ Separamos la parte del cuerpo de la pagina de los menus, entonces siempre se ini
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                    <i class="fa fa-building fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <!--<div class="huge">124</div>-->
@@ -67,7 +67,7 @@ Separamos la parte del cuerpo de la pagina de los menus, entonces siempre se ini
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="/fg.com.mxCI/Index.php/sucursal/">
                             <div class="panel-footer">
                                 <span class="pull-left">Ir a Sucursales</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -89,23 +89,14 @@ Separamos la parte del cuerpo de la pagina de los menus, entonces siempre se ini
                                 </div>
                             </div>
                         </div>
-
+                            <a href="#">
                             <div class="panel-footer">
-                                <ul class="nav" id="side-menu">
-                                <li>
-                                    <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                                    <ul class="nav nav-second-level">
-                                        <li>
-                                            <a href="blank.html">Blank Page</a>
-                                        </li>
-                                    <li>
-                                        <a href="login.html">Login Page</a>
-                                    </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                 <span class="pull-left">Ir a Reportes</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                                
                             </div>
-                    
+                            </a>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@
                             <a href="/fg.com.mxCI/Index.php/empleado/"><i class="fa fa-sitemap fa-fw"></i> Administrar Empleados</a>
                         </li>
                         <li>
-                            <a href="/fg.com.mxCI/Index.php/sucursal/"><i class="fa fa-bar-chart-o fa-fw"></i> Administrar Sucursales</a>
+                            <a href="/fg.com.mxCI/Index.php/sucursal/"><i class="fa fa-building fa-fw"></i> Administrar Sucursales</a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>

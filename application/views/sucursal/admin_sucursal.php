@@ -14,17 +14,17 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3">
-                            Relaci&oacute;n de Sucursal
+                        <div class="col-lg-4 col-md-4">
+                            Relaci&oacute;n de Sucursales
                         </div>
-                        <div class="col-lg-3 col-md-3">
+                        <div class="col-lg-5 col-md-5">
                             <button type="button" class="btn btn-outline btn-info" id='btn_info'>Info</button>
                             <button type="button" class="btn btn-outline btn-warning" id='btn_editar'>Editar</button>
                             <button type="button" class="btn btn-outline btn-danger" id="btn_eliminar">Eliminar</button>
                         </div>
-                        <div class="col-lg-3 col-md-3">
+                        <!--<div class="col-lg-3 col-md-3">
                                 <input type="text" class="form-control" placeholder="Buscar..." id="buscar">                            
-                        </div>
+                        </div>-->
                         <div class="col-lg-2 col-md-2">
                             <button type="button" class="btn btn-success" id="btn_agregar">Agregar Sucursal</button>
                         </div>

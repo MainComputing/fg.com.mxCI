@@ -5,6 +5,10 @@
  *             funcionalidad de la seccion de sucursales.
  *             
  */
+ $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+        
+});
 
 $("input:radio").click(function(){
   $('#alerta').hide("slide");
