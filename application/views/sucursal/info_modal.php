@@ -37,7 +37,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <CENTER><img src="<?php echo base_url().$datos_sucursal[0]['foto']; ?>"/></CENTER>
+                                        <CENTER><img src="<?php echo base_url().$datos_sucursal[0]['foto']; ?>" style="height:100%; width:100%; max-width:290px;"/></CENTER>
                                     </div>
                                 </div>
                             </div>

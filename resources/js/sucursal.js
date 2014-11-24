@@ -146,6 +146,7 @@ $("input:radio").click(function(){
           $.ajax("/fg.com.mxCI/Index.php/sucursal/eliminar_sucursal", {
             type: "post",   // usualmente post o get
             success: function(result) {
+                $("#cuerpo_modal").html("<font color='green' size=10>Sucursal eliminida <img src='/fg.com.mxCI/resources/img/correcto.gif'/>");
                   location.reload(); 
             },
             error: function(result) {
@@ -242,6 +243,7 @@ $("input:radio").click(function(){
                                           $.ajax("/fg.com.mxCI/Index.php/sucursal/editar_sucursal", {
                                                   type: "post",   // usualmente post o get
                                                   success: function(result) {
+                                                    $("#cuerpo_modal_editar").html("<font color='green' size=10>Sucursal actualizada <img src='/fg.com.mxCI/resources/img/correcto.gif'/>");
                                                     location.reload();                                                                                                    
                                                   },
                                                   error: function(result) {

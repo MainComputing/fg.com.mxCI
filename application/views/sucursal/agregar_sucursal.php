@@ -129,7 +129,7 @@
                             <div class="col-lg-12 col-md-12">
                                 <!-- Aqui va la foto-->
                                 <div>
-                                    <img id ="previewimage" src="/fg.com.mxCI/resources/img/previewimage.png"  class="img-thumbnail" style="height:100%; width:100%; max-width:290px;"/>
+                                    <img id ="previewimage" src="/fg.com.mxCI/resources/img/previewsucursal.png"  class="img-thumbnail" style="height:100%; width:100%; max-width:290px;"/>
                                 </div>
                                 <div class="form-group" style="text-align: center;">
                                     <label style="text-align: left;">Seleccionar Imagen:</label>
